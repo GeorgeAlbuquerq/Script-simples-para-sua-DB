@@ -1,6 +1,6 @@
-CREATE DATABASE casa_thomas_jefferson;
+CREATE DATABASE Nome_escolhido;
 
-USE casa_thomas_jefferson;
+USE Nome_escolhido;
 
 CREATE TABLE usuários (
 	id INT NOT NULL AUTO_INCREMENT,
@@ -34,7 +34,7 @@ CREATE TABLE cidade (
     
 # A criar toda essa primeira parte, abri cada table em uma query separada: 
 
-SELECT * FROM casa_thomas_jefferson.pagamento;
+SELECT * FROM nome_escolhido.pagamento;
 
 INSERT INTO pagamento (pagamento_id, dia_recebimento)
 values 
@@ -46,7 +46,7 @@ values
 ('Camila', 'dia 05'),
 ('Alvenazio','dia 05');
 
-SELECT * FROM casa_thomas_jefferson.cidade;
+SELECT * FROM nome_escolhido.cidade;
 
 INSERT INTO cidade (cidade_id, estado)
     VALUES 
@@ -57,7 +57,7 @@ INSERT INTO cidade (cidade_id, estado)
     ('Palmas','Tocantins'),
     ('Belo Horizonte','Minas Gerais');
 
-SELECT * FROM casa_thomas_jefferson.usuários;
+SELECT * FROM nome_escolhido.usuários;
 
 INSERT INTO usuários (usuários_nome, sobrenome, nome_pai, nome_mae)
 
@@ -70,7 +70,7 @@ VALUES
 ('Camila', 'Vargas','Carlos', 'Vilma'),
 ('Jucelino', 'Kubistchek','Juremo', 'Verdilta');
 
-SELECT * FROM casa_thomas_jefferson.endereços;
+SELECT * FROM nome_escolhido.endereços;
 
 INSERT INTO endereços (endereço, cep, telefone,usuários_id)
 VALUES
